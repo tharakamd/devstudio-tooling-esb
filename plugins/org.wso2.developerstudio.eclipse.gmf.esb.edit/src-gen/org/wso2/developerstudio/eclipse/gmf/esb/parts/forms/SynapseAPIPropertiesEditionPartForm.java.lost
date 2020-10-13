@@ -1,0 +1,21 @@
+
+Tue Oct 13 17:52:46 IST 2020
+================================================================================
+Start of user code for additional parameters
+	protected Composite propertiesGroup;
+	
+	protected Control[] apiNameElements;
+	protected Control[] contextElements;
+	protected Control[] hostNameElements;
+	protected Control[] portElements;
+	protected Control[] traceEnabledElements;
+	protected Control[] statisticEnabledElements;
+	protected Control[] versionTypeElements;
+	protected Control[] versionElements;
+	protected Control[] descriptionElements;
+	protected Control[] publishSwaggerElements;
+	
+	protected RegistryKeyProperty publishSwagger;
+	protected Text publishSwaggerText;
+	
+	// End of user code

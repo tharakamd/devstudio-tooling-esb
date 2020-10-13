@@ -1,0 +1,6 @@
+
+Tue Oct 13 17:52:18 IST 2020
+================================================================================
+Start of user code for CommandProperty filter update
+            ((CommandPropertyPropertiesEditionPartImpl) editingPart).validate();
+            // End of user code

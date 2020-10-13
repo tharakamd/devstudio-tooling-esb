@@ -1,0 +1,8 @@
+
+Tue Oct 13 17:52:41 IST 2020
+================================================================================
+Start of user code
+        propertiesStep.addStep(EsbViewsRepository.ClassMediator.Properties.className);
+        propertiesStep.addStep(EsbViewsRepository.ClassMediator.Properties.properties_);
+        propertiesStep.addStep(EsbViewsRepository.ClassMediator.Properties.description);
+        // End of user code

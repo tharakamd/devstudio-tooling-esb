@@ -3428,6 +3428,7 @@ public class EsbViewsRepository {
 			// Start of user code for completionMaxMessages ElementEditor key
 			public static String aggregateElementType = "esb::AggregateMediator::properties::aggregateElementType";
 			// End of user code
+			
 	
 		}
 	
@@ -3443,6 +3444,7 @@ public class EsbViewsRepository {
 			// Start of user code for sequenceKey ElementEditor key
 			public static String sequenceKey = "esb::AggregateMediator::onComplete::sequenceKey";
 			// End of user code
+			
 	
 		}
 	
@@ -5089,6 +5091,7 @@ public class EsbViewsRepository {
 			// Start of user code for valueMessageElementXpath ElementEditor key
 			public static String valueMessageElementXpath = "esb::CommandProperty::properties::valueMessageElementXpath";
 			// End of user code
+			
 	
 		}
 	
@@ -5100,14 +5103,19 @@ public class EsbViewsRepository {
 	 */
 	public static class SqlStatement {
 		public static class Properties {
+	
 			
 			public static String queryString = "esb::SqlStatement::properties::queryString";
 			
+			
 			public static String parameters = "esb::SqlStatement::properties::parameters";
+			
 			
 			public static String resultsEnabled = "esb::SqlStatement::properties::resultsEnabled";
 			
+			
 			public static String results = "esb::SqlStatement::properties::results";
+			
 	
 		}
 	
@@ -6237,6 +6245,9 @@ public class EsbViewsRepository {
 			
 			
 			public static String reverse = "esb::PayloadFactoryMediator::properties::Reverse";
+			
+			
+			public static String templateEngine = "esb::PayloadFactoryMediator::properties::templateEngine";
 			
 	
 		}
@@ -9483,21 +9494,30 @@ public class EsbViewsRepository {
 			
 			public static String transportRabbitMqAutoDeclare = "esb::InboundEndpoint::properties::transportRabbitMqAutoDeclare";
 			
+			
 			public static String transportRabbitMqMaxDeadLetteredCount = "esb::InboundEndpoint::properties::transportRabbitMqMaxDeadLetteredCount";
+			
 			
 			public static String transportRabbitMqRequeueDelay = "esb::InboundEndpoint::properties::transportRabbitMqRequeueDelay";
 			
+			
 			public static String transportRabbitMqExchangeAutoDeclare = "esb::InboundEndpoint::properties::transportRabbitMqExchangeAutoDeclare";
-			                      
+			
+			
 			public static String transportRabbitMqConsumerTag = "esb::InboundEndpoint::properties::transportRabbitMqConsumerTag";
-			                       
+			
+			
 			public static String transportRabbitMqErrorQueueRoutingKey = "esb::InboundEndpoint::properties::transportRabbitMqErrorQueueRoutingKey";
-			                       
+			
+			
 			public static String transportRabbitMqErrorExchangeName = "esb::InboundEndpoint::properties::transportRabbitMqErrorExchangeName";
-			                       
+			
+			
 			public static String transportRabbitMqFactoryConnectionTimeout = "esb::InboundEndpoint::properties::transportRabbitMqFactoryConnectionTimeout";
-			                       
+			
+			
 			public static String transportRabbitMqFactoryNetworkRecoveryInterval = "esb::InboundEndpoint::properties::transportRabbitMqFactoryNetworkRecoveryInterval";
+			
 	
 		}
 	
