@@ -140,9 +140,7 @@ public class PayloadFactoryMediatorPropertiesEditionPartForm extends SectionProp
 
 
   protected EMFComboViewer templateEngine;
-
-
-
+  
   /**
 	 * For {@link ISection} use only.
 	 */
@@ -598,6 +596,10 @@ public class PayloadFactoryMediatorPropertiesEditionPartForm extends SectionProp
     return parent;
   }
 
+
+	/**
+	 * @generated NOT
+	 */
   protected Composite createTemplateEngineEMFComboViewer(FormToolkit widgetFactory, Composite parent) {
 	  Control templateTypeLabel = createDescription(parent,
 			  EsbViewsRepository.PayloadFactoryMediator.Properties.templateEngine, EsbMessages.PayloadFactoryMediatorPropertiesEditionPart_TemplateEngineLabel);
@@ -606,6 +608,13 @@ public class PayloadFactoryMediatorPropertiesEditionPartForm extends SectionProp
     templateEngine.setLabelProvider(new AdapterFactoryLabelProvider(EEFRuntimePlugin.getDefault().getAdapterFactory()));
     GridData templateEngineData = new GridData(GridData.FILL_HORIZONTAL);
     templateEngine.getCombo().setLayoutData(templateEngineData);
+    templateEngine.getCombo().addListener(SWT.MouseVerticalWheel, new Listener() {
+
+          @Override
+          public void handleEvent(Event arg0) {
+              arg0.doit = false;
+          }
+    });
     templateEngine.addSelectionChangedListener(new ISelectionChangedListener() {
 
       /**

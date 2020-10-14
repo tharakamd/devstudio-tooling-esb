@@ -107,10 +107,7 @@ public class PayloadFactoryMediatorPropertiesEditionPartImpl extends CompositePr
 
 
 	protected EMFComboViewer templateEngine;
-
-
-
-  /**
+	/**
 	 * Default constructor
 	 * @param editionComponent the {@link IPropertiesEditionComponent} that manage this part
 	 * 
@@ -519,6 +516,13 @@ public class PayloadFactoryMediatorPropertiesEditionPartImpl extends CompositePr
     templateEngine.setLabelProvider(new AdapterFactoryLabelProvider(EEFRuntimePlugin.getDefault().getAdapterFactory()));
     GridData templateEngineData = new GridData(GridData.FILL_HORIZONTAL);
     templateEngine.getCombo().setLayoutData(templateEngineData);
+    templateEngine.getCombo().addListener(SWT.MouseVerticalWheel, new Listener() {
+	
+    	@Override
+		public void handleEvent(Event arg0) {
+    		arg0.doit = false;
+    	}
+    });
     templateEngine.addSelectionChangedListener(new ISelectionChangedListener() {
 
       /**
@@ -541,7 +545,7 @@ public class PayloadFactoryMediatorPropertiesEditionPartImpl extends CompositePr
     return parent;
   }
 
-  /**
+	/**
 	 * {@inheritDoc}
 	 * 
 	 * @see org.eclipse.emf.eef.runtime.api.notify.IPropertiesEditionListener#firePropertiesChanged(org.eclipse.emf.eef.runtime.api.notify.IPropertiesEditionEvent)
@@ -912,7 +916,7 @@ public class PayloadFactoryMediatorPropertiesEditionPartImpl extends CompositePr
     
   }
 
-  // Start of user code for payloadKey specific getters and setters implementation
+	// Start of user code for payloadKey specific getters and setters implementation
 	@Override
 	public void setPayloadKey(RegistryKeyProperty registryKeyProperty) {
 		// TODO Auto-generated method stub

@@ -320,7 +320,9 @@ public class PayloadFactoryMediatorPropertiesEditionComponent extends SinglePart
 				basePart.updateArgs();
 			if (EsbPackage.eINSTANCE.getPayloadFactoryMediator_MediaType().equals(msg.getFeature()) && msg.getNotifier().equals(semanticObject) && isAccessible(EsbViewsRepository.PayloadFactoryMediator.Properties.mediaType))
 				basePart.setMediaType((MediaType)msg.getNewValue());
-			if (EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine().equals(msg.getFeature()) && msg.getNotifier().equals(semanticObject) && isAccessible(EsbViewsRepository.PayloadFactoryMediator.Properties.templateEngine))
+			if (EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine().equals(msg.getFeature()) 
+					&& msg.getNotifier().equals(semanticObject)
+					&& isAccessible(EsbViewsRepository.PayloadFactoryMediator.Properties.templateEngine))
 				basePart.setTemplateEngine((TemplateEngine)msg.getNewValue());
 			
 			if (EsbPackage.eINSTANCE.getEsbElement_Description().equals(msg.getFeature()) && msg.getNotifier().equals(semanticObject) && basePart != null && isAccessible(EsbViewsRepository.PayloadFactoryMediator.Properties.description)) {
@@ -420,10 +422,12 @@ public class PayloadFactoryMediatorPropertiesEditionComponent extends SinglePart
 					Object newValue = event.getNewValue();
 					if (newValue instanceof String) {
 						newValue =
-								EEFConverterUtil.createFromString(EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine().getEAttributeType(), (String)newValue);
+								EEFConverterUtil.createFromString(EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine()
+										.getEAttributeType(), (String)newValue);
 					}
 					ret =
-							Diagnostician.INSTANCE.validate(EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine().getEAttributeType(), newValue);
+							Diagnostician.INSTANCE.validate(EsbPackage.eINSTANCE.getPayloadFactoryMediator_TemplateEngine()
+									.getEAttributeType(), newValue);
 				}
 				if (EsbViewsRepository.PayloadFactoryMediator.Properties.description == event.getAffectedEditor()) {
 					Object newValue = event.getNewValue();
